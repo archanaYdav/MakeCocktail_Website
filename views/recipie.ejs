@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+    <%if(locals.drink) { %>
+    <div class="recipie" >
+        <div class="drinking">
+            <img src=<%=drink.strDrinkThumb %> alt="" class="img">
+        </div>
+        <div class="drinkbody">
+            <h2>
+                <%= drink.strDrink %>
+            </h2>
+            <div class="instruct">
+                <div class="ingredients">
+                    <h3  id="ingredHead" >Ingredients</h3>
+                    <ul id="ingredBody" class="mainbody">
+                        <% let i=1; while (drink[`strIngredient${i}`] !== null) {%>
+                            <%   if(drink[`strMeasure${i}`] !== null){ %>
+                                <li><%= drink[`strMeasure${i}`] %> of <%= drink[`strIngredient${i}`]%></li>
+                             <%} else{%>
+                                <li><%= drink[`strIngredient${i}`]%></li>
+                        <% }  i++; %>
+                        <% }%>
+                    </ul>
+                </div>
+                <div class="steps">
+                    <h3  id="stepsHead" >Instructions</h3>
+                    <p id="stepsBody" class="mainbody"><%= drink.strInstructions%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%}else{%>
+        <div class="error">
+            <h1>Sorry, It Seems like you have typed a wrong Word! <br> OR The word Dont Exist <br>Try Again!!</h1>
+        </div>
+ <%}%>
+    <%- include("partials/footer.ejs") %>

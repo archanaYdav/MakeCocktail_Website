@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+
+    <main>
+
+        <section id="sec1">
+            <div class="intro">
+                <h1>ENJOY YOUR BEST <br> COCKTAIL BY MAKING IT ON YOUR OWN<br><img style="transform: rotate(60deg);"
+                        src="images/twoglasses.png" alt="">OR WITH FRIENDS<img style="transform: rotate(-42deg);"
+                        src="images/twoglasses.png" alt=""></h1>
+                <a class="introBtn" href="#sec2">SOME BEST COCKTAILS HERE..</a>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <h1 class="cardsh1"><img src="images/smalldrink.jpeg" alt=""> Make It Drink It</h1>
+            <div class="cockCards pd-30">
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Tequila Sunrise">
+                        <h2>Tequila Sunrise</h2>
+                        <img src="images/tequilasunrise.jpeg" alt="">
+                    </button>
+                </form>
+
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Blue Lagoon">
+                        <h2>Blue Lagoon</h2>
+                        <img src="images/bluelagoon.jpeg" alt="">
+                    </button>
+                </form>
+
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Aperol Spritz">
+                        <h2>Aperol Spritz</h2>
+                        <img src="images/aperol.jpeg" alt="">
+                    </button>
+                </form>
+
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Mai Tai">
+                        <h2>Mai Tai</h2>
+                        <img src="images/maitai.jpeg" alt="">
+                    </button>
+                </form>
+
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Mojito">
+                        <h2>Mojito</h2>
+                        <img src="images/mojito.jpeg" alt="">
+                    </button>
+                </form>
+
+                <form action="/search" class="card1 card" method="post">
+                    <button name="search" value="Gin and Tonic">
+                        <h2>Gin & Tonic</h2>
+                        <img src="images/gintonic.jpeg" alt="">
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <%- include("partials/footer.ejs") %>

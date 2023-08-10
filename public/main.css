@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.pd-30 {
+    padding: 0 30px;
+}
+
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 48px;
+    transform: rotate(-3deg);
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Borel', cursive; */
+    /* font-family: 'Great Vibes', cursive; */
+}
+
+.listItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    flex: 0.57;
+}
+
+
+.listItems a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 54px;
+}
+
+.listItems a:hover {
+    color: rgba(255, 255, 255, 0.593);
+}
+
+
+.listItems form {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.formSearch input {
+    padding: 10px 20px;
+    padding-right: 0px;
+    width: 100%;
+    border-radius: 24px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #edeef0;
+    color: black;
+    font-size: 15px;
+}
+
+.formSearch button {
+    padding: 11px 15px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    margin-left: 7px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjEyMy4wNXB4IiBoZWlnaHQ9IjEyMy4wNXB4IiB2aWV3Qm94PSIwIDAgMTIzLjA1IDEyMy4wNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIzLjA1IDEyMy4wNTsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTEyMS4zMjUsMTAuOTI1bC04LjUtOC4zOTljLTIuMy0yLjMtNi4xLTIuMy04LjUsMGwtNDIuNCw0Mi4zOTlMMTguNzI2LDEuNzI2Yy0yLjMwMS0yLjMwMS02LjEwMS0yLjMwMS04LjUsMGwtOC41LDguNQ0KCQljLTIuMzAxLDIuMy0yLjMwMSw2LjEsMCw4LjVsNDMuMSw0My4xbC00Mi4zLDQyLjVjLTIuMywyLjMtMi4zLDYuMSwwLDguNWw4LjUsOC41YzIuMywyLjMsNi4xLDIuMyw4LjUsMGw0Mi4zOTktNDIuNGw0Mi40LDQyLjQNCgkJYzIuMywyLjMsNi4xLDIuMyw4LjUsMGw4LjUtOC41YzIuMy0yLjMsMi4zLTYuMSwwLTguNWwtNDIuNS00Mi40bDQyLjQtNDIuMzk5QzEyMy42MjUsMTcuMTI1LDEyMy42MjUsMTMuMzI1LDEyMS4zMjUsMTAuOTI1eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
+    background-size: 10px 10px;
+    cursor: pointer;
+}
+
+.listItems>img {
+    display: none;
+    height: 38px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.hamburger {
+    min-height: 600px;
+    display: none;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.77);
+    gap: 49px;
+    flex-direction: column;
+
+}
+
+.hamburger a {
+    cursor: pointer;
+    margin-left: 8px;
+    color: white;
+    font-size: 23px;
+
+}
+
+.hamburger a:hover {
+    color: rgba(255, 255, 255, 0.593);
+}
+
+.hamburger .menuForm {
+    display: flex;
+
+}
+
+.hamburger .menuForm input {
+    width: 80%;
+}
+
+
+/* this is main part */
+
+.intro {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 61px;
+    line-height: 1.7;
+    flex-direction: column;
+    background-image: url("images/cover.jpeg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.intro h1 {
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.intro h1 img {
+    height: 48px;
+}
+
+.intro .introBtn {
+    margin-top: 20px;
+    padding: 14px 51px;
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.cockCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 40px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+.card button{
+    cursor: pointer;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.card img {
+    height: 261px;
+}
+
+.cardsh1 {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.cardsh1 img {
+    height: 38px;
+}
+
+
+footer {
+    padding: 11px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+footer img {
+    height: 40px;
+}
+
+
+/* this is the recipie site */
+
+.recipie {
+    display: flex;
+    min-height: 100vh;
+    padding: 0 46px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.drinking {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 97vh;
+    flex: 1;
+}
+
+.drinking .img {
+    border-radius: 19px;
+    height: 400px;
+}
+
+.drinkbody {
+    border-left: 2px solid rgba(0, 0, 0, 0.325);
+    padding-top: 100px;
+    padding-left: 45px;
+    height: 100vh;
+    flex: 1;
+}
+
+.drinkbody h2 {
+    font-family: 'Gayathri', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 61px;
+}
+
+.instruct > *{
+    
+    flex: 1;
+    margin-left: 30px;
+}
+
+.drinkbody .instruct {
+    display: flex;
+
+}
+
+.instruct h3{
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.815);
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.ingredients h3{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.615);
+}
+
+#ingredBody{
+    display: block;
+}
+
+
+.steps h3{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#stepsBody{
+    display: none;
+}
+
+.mainbody{
+    padding-left: 30px;
+}
+
+.error{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h1{
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+@media only screen and (max-width: 1026px) {
+
+    .listItems a {
+        display: none;
+    }
+
+    .listItems {
+        flex: 0.75;
+    }
+
+    #menuImg {
+        display: inline;
+    }
+
+
+    .card img {
+        height: 200px;
+    }
+    
+    .recipie{
+        flex-direction: column-reverse;
+    }
+
+    .drinkbody{
+    margin-bottom: 100px;
+    padding-left: 0;
+    border-left: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    .card img {
+        height: 183px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 23px;
+    }
+}
+
+
+@media only screen and (max-width: 610px) {
+    .listItems {
+        flex: 0;
+    }
+
+    .navbar h1 {
+        font-size: 35px;
+    }
+
+    .listItems form {
+        display: none;
+    }
+
+    .searchIcon {
+        display: inline;
+    }
+
+    .intro {
+        padding: 40px;
+    }
+
+    .intro h1 {
+        font-size: 43px;
+    }
+
+    .intro h1 img {
+        height: 30px;
+    }
+
+    .intro .introBtn {
+        font-size: 13px;
+        padding: 10px 30px;
+        margin-top: 10px;
+
+    }
+
+    .cockCards {
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: auto;
+    }
+
+    .drinking .img{
+        height: 315px;
+    }
+}
+
+
+@media only screen and (max-width: 453px) {
+
+    .intro {
+        padding: 29px;
+    }
+
+    .intro h1 {
+        font-size: 23px;
+    }
+
+    .intro h1 img {
+        height: 18px;
+    }
+
+    .intro .introBtn {
+        font-size: 8px;
+        padding: 10px 17px;
+    }
+
+    .cardsh1 {
+        font-size: 32px;
+    }
+
+    .drinkbody{
+        margin-bottom: 30px;
+    }
+
+    .drinkbody h2{
+        font-size: 47px;
+    }
+
+    .drinking .img{
+        height: 225px;
+    }
+
+    .mainbody{
+        padding: 0;
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+}
+
